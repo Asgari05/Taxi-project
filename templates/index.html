@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Taxi Price Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h2>Taxi Price Prediction Form</h2>
+    <form action="/predict" method="POST">
+    <label for="Monthlyincome">Monthly Income:</label><br>
+    <input type="number" id="Monthlyincome" name="Monthlyincome" required><br>
+
+    <label for="Averageparkingpermonth">Average Parking per Month:</label><br>
+    <input type="number" id="Averageparkingpermonth" name="Averageparkingpermonth" required><br>
+
+    <label for="Priceperweek">Price per Week:</label><br>
+    <input type="number" id="Priceperweek" name="Priceperweek" required><br>
+
+    <label for="Population">Population:</label><br>
+    <input type="number" id="Population" name="Population" required><br><br>
+
+    <input type="submit" value="Predict">
+</form>
+</body>
+</html>
